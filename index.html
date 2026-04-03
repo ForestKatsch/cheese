@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cheese</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+      }
+      html,
+      body,
+      .message-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      html {
+        --animation-stagger: 0.3s;
+        --bg: #ffd;
+        --fg: #000;
+        font-family: sans-serif;
+        background-color: var(--bg);
+        color: var(--fg);
+      }
+      @media (prefers-color-scheme: dark) {
+        html {
+          --bg: #000;
+          --fg: #ffd;
+        }
+      }
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5vw;
+        gap: 2rem;
+      }
+
+      .message-container h1 {
+        animation: wave 3s ease-in-out infinite;
+      }
+
+      .message-container h1:nth-child(1) {
+        animation-delay: calc(var(--animation-stagger) * -19);
+      }
+
+      .message-container h1:nth-child(2) {
+        animation-delay: calc(var(--animation-stagger) * -18);
+      }
+
+      .message-container h1:nth-child(3) {
+        animation-delay: calc(var(--animation-stagger) * -17);
+      }
+
+      .message-container h1:nth-child(4) {
+        animation-delay: calc(var(--animation-stagger) * -16);
+      }
+
+      .message-container h1:nth-child(5) {
+        animation-delay: calc(var(--animation-stagger) * -15);
+      }
+
+      .message-container h1:nth-child(6) {
+        animation-delay: calc(var(--animation-stagger) * -14);
+      }
+
+      .message-container h1:nth-child(7) {
+        animation-delay: calc(var(--animation-stagger) * -13);
+      }
+
+      .message-container h1:nth-child(8) {
+        animation-delay: calc(var(--animation-stagger) * -12);
+      }
+
+      .message-container h1:nth-child(9) {
+        animation-delay: calc(var(--animation-stagger) * -11);
+      }
+
+      .message-container h1:nth-child(10) {
+        animation-delay: calc(var(--animation-stagger) * -10);
+      }
+
+      .message-container h1:nth-child(11) {
+        animation-delay: calc(var(--animation-stagger) * -9);
+      }
+
+      .message-container h1:nth-child(12) {
+        animation-delay: calc(var(--animation-stagger) * -8);
+      }
+
+      .message-container h1:nth-child(13) {
+        animation-delay: calc(var(--animation-stagger) * -7);
+      }
+
+      .message-container h1:nth-child(14) {
+        animation-delay: calc(var(--animation-stagger) * -6);
+      }
+
+      .message-container h1:nth-child(15) {
+        animation-delay: calc(var(--animation-stagger) * -5);
+      }
+
+      .message-container h1:nth-child(16) {
+        animation-delay: calc(var(--animation-stagger) * -4);
+      }
+
+      .message-container h1:nth-child(17) {
+        animation-delay: calc(var(--animation-stagger) * -3);
+      }
+
+      .message-container h1:nth-child(18) {
+        animation-delay: calc(var(--animation-stagger) * -2);
+      }
+
+      .message-container h1:nth-child(19) {
+        animation-delay: calc(var(--animation-stagger) * -1);
+      }
+
+      .message-container h1:nth-child(20) {
+        animation-delay: 0s;
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          opacity: 0.25;
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+
+      .instructions {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 1rem;
+        padding: 1.2rem 2rem;
+        background-color: var(--fg);
+        color: var(--bg);
+        border-radius: 4px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+        [data-os] {
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+          display: none;
+
+          &.visible {
+            display: block;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="message-container">
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+      <h1>I will remember to lock my computer</h1>
+    </section>
+    <section class="instructions">
+      <section data-os="macos">
+        <span class="keys">⌃ ⌘ Q</span>
+      </section>
+      <section data-os="windows">
+        <span class="keys">⊞ L</span>
+      </section>
+      <section data-os="linux" class="visible">
+        <a
+          class="keys"
+          href="https://letmegooglethat.com/?q=how+to+lock+screen+on+linux+%5Binsert+distro+here%5D"
+          >How do I lock my computer?</a
+        >
+      </section>
+    </section>
+    <script>
+      function detectPlatform() {
+        const p = navigator.platform.toUpperCase();
+        if (p.includes("MAC")) {
+          return "macos";
+        }
+        if (p.includes("WIN")) {
+          return "windows";
+        }
+        return "linux";
+      }
+      const platform = detectPlatform();
+      document
+        .querySelectorAll("[data-os]")
+        .forEach((el) =>
+          el.classList.toggle("visible", el.dataset.os === platform),
+        );
+    </script>
+  </body>
+</html>
