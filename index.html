@@ -25,12 +25,17 @@
       font-family: sans-serif;
       background-color: var(--bg);
       color: var(--fg);
+      background-image: url("./cheese.jpg");
+      background-repeat: repeat;
+      background-size: 306px 242px;
+      background-blend-mode: multiply;
     }
 
     @media (prefers-color-scheme: dark) {
       html {
         --bg: #000;
         --fg: #ffd;
+        background-color: #443;
       }
     }
 
@@ -162,32 +167,6 @@
         }
       }
     }
-
-    .cheese-image {
-      height: 242px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      background-image: url("./cheese.jpg");
-      background-repeat: repeat;
-      background-size: 306px 242px;
-      animation: cheese-marquee 3s linear infinite;
-    }
-
-    @keyframes cheese-marquee {
-
-      0%,
-      100% {
-        background-position-x: 0;
-        opacity: 0.75;
-      }
-
-      50% {
-        background-position-x: -306px;
-        opacity: 1;
-      }
-    }
   </style>
 </head>
 
@@ -234,7 +213,6 @@
         I lock my computer?</a>
     </section>
   </section>
-  <div class="cheese-image"></div>
   <script>
     function detectPlatform() {
       const p = navigator.platform.toUpperCase();
